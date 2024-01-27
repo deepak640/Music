@@ -1,0 +1,129 @@
+.login {
+    backdrop-filter: blur(1rem);
+    padding-top: 5px;
+    padding-bottom: 10px;
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
+    width: 600px;
+    margin: auto;
+    height: max-content;
+    position: relative;
+    top: 2em;
+}
+
+.login-div {
+    animation: transitionIn 0.7s;  
+    height: 100vh;
+}
+
+.login div {
+    width: 70%;
+    margin: auto;
+    margin-top: 26px;
+}
+
+.register-link {
+    font-size: 1em;
+    padding: 18px 10px;
+}
+.register-link a {
+    text-decoration: none;
+}
+.register-link h5{
+    font-size: 1em;
+}
+
+.sign-btn {
+    display: flex;
+}
+
+.sign-btn button {
+    margin: auto;
+    padding: 10px 50px;
+}
+
+.form-control {
+    border-bottom: 1px solid rgb(0, 0, 255);    
+    border-top:none;    
+    border-left: none;    
+    border-right:none;    
+    background: transparent;
+    border-radius: 0%;
+}
+
+.custom-color:focus {
+    border-bottom: none;
+    transition:all ease-in-out 0.7s;
+    animation: transitionIn 0.2s;
+    border-radius: 0%;
+    color: #212529;
+    background: transparent;
+    border: solid 1px rgb(0, 0, 255);
+    box-shadow: none;
+    border-color: rgb(0, 0, 255, 1) !important;
+}
+.login-banner{
+    display:none;
+    margin: auto;
+    margin-top: 70px;
+    width:15%;
+    padding: 0;
+    transition: all 0.5s ease-in-out;
+    animation: transitionIn 0.5s;
+}
+.login-banner p{
+    font-weight: 700;
+    width: max-content;
+    margin-top: 12px;
+    margin-left: 10px;
+}
+
+.fa-hide{
+    position: absolute;
+    font-size: 1.4em;
+    bottom: 10px;
+    cursor: pointer;
+    opacity: 0.5;
+    right: 5px;
+}
+
+#eye-open{
+    display:none;
+}
+
+.checkbox{
+    padding:10px  25px;
+}   
+
+// ----------------------- For Phone -----------
+
+
+@media(max-width:1000px) {
+    .login{
+    
+        top: 200px;
+        width: 90%;
+    }
+    .register-link .h5,.register-link a{
+        position: relative;
+        // font-size: 1em;
+    }
+    }
+
+@media(max-width:400px) {
+    .login{
+    
+        top: 1em;
+        width: 90%;
+    }
+    .register-link .h5,.register-link a{
+        position: relative;
+        // font-size: 1em;
+    }
+    .register-link{
+        padding: 30px 0px;
+        font-size: 0.8em;
+    }
+    .login-div{
+        height: 100vh;
+    }
+    }

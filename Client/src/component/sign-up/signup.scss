@@ -1,0 +1,33 @@
+.sign-up {
+    padding-top: 2px;
+    padding-bottom: 10px;
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
+    width: 50%;
+    margin: auto;
+    height: 89vh;
+}
+
+.form-sign-up{
+    animation: transitionIn 0.7s;  
+    height: 100vh;
+}
+.sign-up div {
+    width: 50%;
+    margin: auto;
+    margin-top: 26px;
+}
+
+.text-success {
+    width: 90%;
+}
+
+.h5 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 500;
+    width: max-content;
+    margin: auto;
+}
+
+.register {
+    margin-top: 30px;
+}

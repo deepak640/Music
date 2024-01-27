@@ -1,0 +1,48 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 8vh;
+}
+
+.navlist {
+  list-style: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 30px;
+  width: 20vw;
+  height: 70%;
+
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.navlinks a {
+  padding: 10px 0 10px 0;
+  letter-spacing: 0.9px;
+  position: relative;
+}
+
+.navlinks a::after {
+  content: '';
+  background-color:var(--lower);
+  width: 0%;
+  border-radius: 2px;
+  transform: scaleX(0);
+  height: 3px;
+  position: absolute;
+  bottom: 0;
+  transition: all 0.3s ease-in-out;
+  left: 0;
+}
+.navlinks a:hover{
+  color:var(--medium);
+}
+.navlinks a:hover::after {
+  transform: scaleX(100%);
+  width: 100%;
+}

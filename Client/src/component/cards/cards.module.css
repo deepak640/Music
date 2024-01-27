@@ -1,0 +1,40 @@
+.comment,.position{
+  font-style: italic;
+}
+.container{
+  position: relative;
+  display: flex;
+  gap: 80px;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 50px 0 30px 0;
+}
+.card{
+  padding: 0 0 20px 0;
+  display: flex;
+  box-shadow: 0px 0 7px 0 black;
+  flex-direction: column;
+  flex-basis: 450px;
+  height: max-content;
+  align-items: center;
+  background-color: var(--secondary);
+}
+
+.card p{
+  text-align: center;
+  line-height: 1.8;
+  width: 80%;
+}
+.name{
+  font-size: 1.2rem;
+}
+
+.card img{
+  transform: translateY(-50%);
+  border: 10px solid var(--primary);
+  border-radius:50%;
+}
+
+.mark{
+  font-size: 20pt;
+}

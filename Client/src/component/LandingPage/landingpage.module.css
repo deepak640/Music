@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+.main {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.main img {
+    width: 300px;
+}
+.imgcontainer{
+    display: flex;
+    justify-content: center;
+    width: 375px;
+}
+.btnstyle:hover {
+    text-decoration: none;
+}
+
+.testimonial .heading {
+    width: max-content;
+    margin: 40px auto 40px auto;
+    padding: 10px;
+    position: relative;
+    font-size: 20pt;
+}
+
+.heading::after {
+    content: '';
+    position: absolute;
+    height: 5px;
+    width: 60%;
+    border-radius: 2px;
+    left: 20%;
+    bottom: 0;
+    background-color: var(--lower);
+}
+
+.textbox {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-size: 1rem;
+    padding: 30px;
+}
+
+.button {
+    width: max-content;
+    position: relative;
+    display: inline-block;
+    padding: 15px 30px;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all 0.7s ease;
+    color: var(--lower);
+    background: var(--secondary);
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
+    letter-spacing: 2px;
+    font-size: 16px;
+}
+
+.button:hover {
+    text-decoration: none;
+    color: rgba(225, 225, 225, 1);
+}
+
+.button span {
+    display: block;
+    position: absolute;
+    background: var(--lower);
+}
+
+.button span:nth-child(1) {
+    left: 0;
+    bottom: 0;
+    width: 3px;
+    height: 100%;
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: transform 0.5s;
+}
+
+.button:hover span:nth-child(1) {
+    transform: scaleY(1);
+    transform-origin: bottom;
+    transition: transform 0.5s;
+}
+
+.button span:nth-child(2) {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 3px;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.5s;
+}
+
+.button:hover span:nth-child(2) {
+    transform: scaleX(1);
+    transform-origin: left;
+    transition: transform 0.5s;
+}
+
+.button span:nth-child(3) {
+    right: 0;
+    bottom: 0;
+    width: 3px;
+    height: 100%;
+    transform: scaleY(0);
+    transform-origin: top;
+    transition-delay: 0.5s;
+    transition: transform 0.5s;
+}
+
+.button:hover span:nth-child(3) {
+    transform: scaleY(1);
+    transform-origin: bottom;
+    transition-delay: 0.5s;
+    transition: transform 0.5s;
+}
+
+.button span:nth-child(4) {
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 3px;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.5s;
+    transition-delay: 0.5s;
+}
+
+.button:hover span:nth-child(4) {
+    transform: scaleX(1);
+    transform-origin: left;
+    transition: transform 0.5s;
+    transition-delay: 0.5s;
+}
+
+@keyframes transitionIn {
+    from {
+        opacity: 0;
+        transform: rotateX(-10deg);
+    }
+
+    to {
+        opacity: 1;
+        transform: rotateX(0);
+    }
+}

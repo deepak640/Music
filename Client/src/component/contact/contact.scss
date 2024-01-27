@@ -1,0 +1,64 @@
+
+.row1{
+    margin-top:5% ;
+    display: flex;
+    justify-content: space-between;
+}
+.contact-us1{
+width: 80%;
+margin: auto;
+}
+.contact-col1{
+    margin-bottom: 30px;
+    flex: basis 48%;
+}
+.contact-col1 div{
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+.transparent{
+    background: transparent;
+    // border: red solid 2px;
+}
+.hero-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: rgb(0, 0, 25,0.8);
+    border: 1px solid blue;
+    padding: 12px 34px;
+    background:transparent; 
+    position: relative;
+    cursor: pointer;
+}
+.hero-btn:hover{
+    color: white;
+    border: 1px solid blue;
+    background: linear-gradient(120deg,rgb(0, 0, 255,0.3),rgb(0, 0, 255,0.1));
+    transition:1s;
+}
+
+.contact-col1 div .fa{
+    font-size: 28px;
+    color: blue;
+    margin: 10px;
+    margin-right: 30px;
+}
+
+.contact-col1 div p{
+    padding: 0;
+}
+.contact-col1 div h5{
+    font-size: 20px;
+    margin-bottom:5px ;
+    color: #555;
+    font-weight: 400;
+}
+.contact-col1 input, .contact-col1 textarea{
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 17px;
+    outline: none;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}

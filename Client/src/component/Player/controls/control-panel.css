@@ -1,0 +1,13 @@
+.control-panel {
+  margin-left: 20px;
+    width: 98%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .timer {
+    margin-top: -8px;
+    font-size: 12px;
+    font-weight: 200;
+    color: rgb(196, 196, 196);
+  }
